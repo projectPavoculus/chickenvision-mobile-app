@@ -10,8 +10,6 @@ The app allows users to point their phone's camera at a crowd and replace all th
 
 ## Codebase Visualization
 
-The codebase visualization diagram below provides an overview of the project's code structure and dependencies.
-
 ![Visualization of the codebase](./diagram.svg)
 
 ## License
