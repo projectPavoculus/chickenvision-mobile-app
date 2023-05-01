@@ -13,5 +13,5 @@ jobs:
       - name: Update diagram
         uses: githubocto/repo-visualizer@main
         with:
+          token: ${{ secrets.GITHUB_TOKEN }}
           excluded_paths: ".github"
-          token: ${{ secrets.REPO_PAT }}
