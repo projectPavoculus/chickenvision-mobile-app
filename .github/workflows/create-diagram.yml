@@ -1,20 +1,18 @@
-name: Generate Codebase Diagram
-
+name: Create diagram
 on:
+  workflow_dispatch: {}
   push:
     branches:
       - main
 
 jobs:
-  create_diagram:
+  get_data:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v2
-
-    - name: Generate diagram
-      uses: githubocto/repo-visualizer@main
-      with:
-        output_file: "diagram.svg"
-        exclusions: "**/*.test.js,**/node_modules/**"
+      - name: Checkout code
+        uses: actions/checkout@master
+        
+      - name: Update diagram
+        uses: githubocto/repo-visualizer@main
+        with:
+          excluded_paths: "ignore,.github"
