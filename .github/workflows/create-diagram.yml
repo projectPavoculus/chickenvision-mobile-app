@@ -7,11 +7,12 @@ on:
 jobs:
   get_data:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
       - name: Update diagram
         uses: githubocto/repo-visualizer@main
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           excluded_paths: ".github"
