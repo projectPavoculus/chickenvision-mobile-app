@@ -10,7 +10,7 @@ The app allows users to point their phone's camera at a crowd and replace all th
 
 ## Codebase Visualization
 
-![Visualization of the codebase](./diagram.svg)
+<img src="./diagram.svg" width="500px">
 
 ## License
 
