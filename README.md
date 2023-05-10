@@ -12,8 +12,7 @@ The app allows users to point their phone's camera at a crowd and replace all th
 
 <img src="https://user-images.githubusercontent.com/66517969/236678890-3d2b2dca-a2ee-4a27-8c46-a95694ac50dd.png" width="700px">
 
-<details><summary>Details on UI/UX</summary>
-<p>
+## Details on UI/UX Design
 
 ### Record Button Placement
 
@@ -32,7 +31,7 @@ If you think about it, it is natural for human hands to be on the right edge of 
 
 ## Button and Menu Positioning
 
-The buttons and menu are positioned to maximize screen real estate and minimize interference with the primary video view. This design choice allows users to focus on capturing the scene without distractions.
+The buttons and menu are positioned to maximize screen real estate and minimize interference with the primary video view. This design choice allows users to focus on capturing the scene with a comfortable grip.
 
 <img src="https://user-images.githubusercontent.com/66517969/236679572-42824516-ae2a-4df9-bd64-6b2dca047173.png" width="400px">
 
@@ -57,10 +56,9 @@ The app's UI is designed to accommodate diagonal filming, enabling users to capt
 
 ### Later UI feature 
 
-<img src="https://user-images.githubusercontent.com/66517969/236682134-dbc3d581-171a-4c45-9fc8-5172a6f065d6.png" width="250px">
+We plan to introduce a lock feature, enabling users to record without holding the record button, further enhancing user experience.
 
-</p>
-</details> 
+<img src="https://user-images.githubusercontent.com/66517969/236682134-dbc3d581-171a-4c45-9fc8-5172a6f065d6.png" width="250px">
 
 ## Codebase Visualization
 
