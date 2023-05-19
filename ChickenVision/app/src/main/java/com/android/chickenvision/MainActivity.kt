@@ -66,6 +66,25 @@ class MainActivity : AppCompatActivity() {
         cameraExecutor = Executors.newSingleThreadExecutor()
     }
 
+    private val activityResultLauncher =
+        registerForActivityResult(
+            ActivityResultContracts.RequestMultiplePermissions())
+        { permissions ->
+            // Handle Permission granted/rejected
+            var permissionGranted = true
+            permissions.entries.forEach {
+                if (it.key in REQUIRED_PERMISSIONS && !it.value)
+                    permissionGranted = false
+            }
+            if (!permissionGranted) {
+                Toast.makeText(baseContext,
+                    "Permission request denied",
+                    Toast.LENGTH_SHORT).show()
+            } else {
+                startCamera()
+            }
+        }
+
     private fun takePhoto() {}
 
     private fun captureVideo() {}
